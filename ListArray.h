@@ -45,9 +45,10 @@ public:
 	}
 
 	friend std::ostream& operator<<(std::ostream &out, ListArray<T> &list) {
+		out << "List => [" << std::endl;
 		for (int i = 0; i < list.n; ++i)
-			out << list[i] << ",";
-		out << std::endl;
+			out << "\t" << list[i] << std::endl;
+		out << "]";
 		return out;
 	}
 
