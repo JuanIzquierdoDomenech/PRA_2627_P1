@@ -34,7 +34,7 @@ public:
 		n = 0;
 	}
 
-	~ListArray() {
+	~ListArray() override {
 		delete[] arr;
 	}
 
