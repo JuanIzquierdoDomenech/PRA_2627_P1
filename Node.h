@@ -1,3 +1,6 @@
+#ifndef NODE_H
+#define NODE_H
+
 #include <ostream>
 
 template <typename T> 
@@ -16,3 +19,5 @@ public:
 		return out;
 	}
 };
+
+#endif
